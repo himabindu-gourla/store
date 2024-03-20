@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color:hsl(357, 70%, 62%);
+  height: 100px;
+  font-size: 30px;
+  color:rgb(34, 29, 29);
+}
+.mainMenu {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+
+@media(max-width:900px){
+  .mainMenu{
+    position: absolute;
+    z-index: 999999;
+    right: 0;
+    top: 10vh;
+    width: 100%;
+    height: 90vh;
+    background-color: #ec0707;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in;
+    display: none;
+  }
+
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.burger div {
+  background-color: white;
+  height: 4px;
+  width: 35px;
+  transition: all, 03s, ease-in;
+}
+
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.mainMenu {
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  width: 100%;
+  height: 90vh;
+  z-index: 999999;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in;
+}
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+a{
+  text-decoration: none;
+  padding: 20px;
+  color:white;
+}
+#cardContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.box{
+  border: 1px solid #ec0707;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  /* width: calc(33.33% - 20px);  */
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(211, 47, 47, 0.1);
+  float: left; /* Float the cards to align them horizontally */
+}
+.box:hover{
+  width: 300px;
+  background-color: brown;
+
+}
+button{
+  width: 100px;
+  height:45px;
+  outline: black;
+  border: none;
+  background-color:hsl(357, 70%, 62%);
+
+  color:black;
+  border-radius: 5%;
+  font-size:20px;
+
+  /* margin-bottom: 30px; */
+  
+}
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color:hsl(357, 70%, 62%);
+  /* height: 100px; */
+  font-size: 30px;
+}
+
+.box img {
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+
+
+
+  .box img:hover {
+    max-width: 250px;
+    border-radius: 5px;
+  }
